@@ -8,4 +8,6 @@ the original repository for that is here: https://github.com/Ser-Hilary/SDXL_siz
 The only downside is that it takes the resolution as a string so I made a node to concat 2 integers to a string with a "x" in the middle.
 
 The Idea Behind this whole fork is that I hope we can can convince Ser-hilary to make the extra node obsolete by using 2 integers (or worst case a tuple)
-I think this idea it really on to something and wanted to share some examples here.
+
+
+I think with this idea he/she is really on to something, and wanted to share some examples here so it might gain some tracktion.
