@@ -1,0 +1,28 @@
+class ConcatToString:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {"required": {
+                    "Width": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
+                    "Height": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
+                    },
+                }
+
+    RETURN_TYPES = ("STRING", )
+    RETURN_NAMES = ("String", )
+    FUNCTION = "get_value"
+    CATEGORY = "Kwiss Nodes/SDXL"
+
+    def get_value(self, Width, Height, ):
+        resolution = str( Width ) + "x" + str( Height )
+        return (resolution,)
+    
+# Register nodes in ComfyUI
+
+NODE_CLASS_MAPPINGS = {
+    "ConcatToString": ConcatToString
+    }
+# Human readable names for the nodes
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "ConcatToString": "Concat HeightWidth To String",
+    }
